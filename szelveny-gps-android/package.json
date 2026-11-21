@@ -1,0 +1,16 @@
+{
+  "name": "szelveny-gps",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Szelvény és tengelytávolság GPS-ből LandXML tengelyek alapján",
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/geolocation": "^7.0.0",
+    "leaflet": "1.9.4"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0"
+  }
+}
