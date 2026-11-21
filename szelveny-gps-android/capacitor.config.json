@@ -1,9 +1,0 @@
-{
-  "appId": "hu.szelveny.gps",
-  "appName": "Szelvény GPS",
-  "webDir": "www",
-  "android": {
-    "adjustMarginsForEdgeToEdge": "force",
-    "allowMixedContent": false
-  }
-}
