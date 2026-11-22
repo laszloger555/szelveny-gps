@@ -1,6 +1,6 @@
 {
   "appId": "hu.szelveny.gps",
-  "appName": "Szelvény GPS",
+  "appName": "Szelvényezés",
   "webDir": "www",
   "android": {
     "adjustMarginsForEdgeToEdge": "force",

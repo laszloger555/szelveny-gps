@@ -39,7 +39,7 @@ jobs:
 
       - name: Ikon generálása
         continue-on-error: true
-        run: npx capacitor-assets generate --android --iconBackgroundColor '#32806a' --splashBackgroundColor '#f8fafc' --splashBackgroundColorDark '#f8fafc'
+        run: npx capacitor-assets generate --android --iconBackgroundColor '#0f766e' --splashBackgroundColor '#f8fafc' --splashBackgroundColorDark '#f8fafc'
 
       - name: Szinkronizálás
         run: npx cap sync android
@@ -68,4 +68,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release delete latest -y --cleanup-tag || true
-          gh release create latest szelveny-gps.apk --title "Szelvény GPS – legfrissebb (1.0.${{ github.run_number }})" --notes "Automatikus build #${{ github.run_number }}, commit ${{ github.sha }}"
+          gh release create latest szelveny-gps.apk --title "Szelvényezés – legfrissebb (1.0.${{ github.run_number }})" --notes "Automatikus build #${{ github.run_number }}, commit ${{ github.sha }}"

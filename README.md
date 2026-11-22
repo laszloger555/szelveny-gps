@@ -1,4 +1,4 @@
-# Szelvény GPS – Android app
+# Szelvényezés (Szelvény GPS) – GERYSoft Geo Mind Android app
 
 A telefon GPS-éből megmutatja, melyik nyomvonal (tengely) melyik szelvényében vagy,
 és hány méterre a tengelytől (J = jobbra +, B = balra −, a szelvényezés irányába nézve).
@@ -15,7 +15,7 @@ de az appban a Menü → „XML betöltése…” gombbal bármelyik másikat be
    Ha nincs ott: **Add file → Create new file**, a fájlnév legyen `.github/workflows/build.yml`,
    a tartalma pedig a `ci/build.yml.masolat` fájl szövege → **Commit changes**.
 5. Fent az **Actions** fül → az „APK fordítás” futás kb. 5–8 perc. Zöld pipa = kész.
-6. A repository főoldalán jobb oldalt **Releases → „Szelvény GPS – legfrissebb”** → `szelveny-gps.apk`.
+6. A repository főoldalán jobb oldalt **Releases → „Szelvényezés – legfrissebb”** → `szelveny-gps.apk`.
    Ezt a linket nyisd meg a telefonon, töltsd le, és telepítsd
    (első alkalommal engedélyezni kell az „ismeretlen forrásból” telepítést a böngészőnek).
 
