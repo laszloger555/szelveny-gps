@@ -39,7 +39,7 @@ jobs:
 
       - name: Ikon generálása
         continue-on-error: true
-        run: npx capacitor-assets generate --android --iconBackgroundColor '#ff6a13' --splashBackgroundColor '#14171a'
+        run: npx capacitor-assets generate --android --iconBackgroundColor '#32806a' --splashBackgroundColor '#f8fafc' --splashBackgroundColorDark '#f8fafc'
 
       - name: Szinkronizálás
         run: npx cap sync android
