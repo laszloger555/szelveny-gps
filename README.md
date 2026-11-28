@@ -28,3 +28,18 @@ felülírja a régit (a betöltött XML megmarad).
 - A képernyő ébren marad, amíg az app előtérben van.
 - Teszt mód: GPS helyett a térképre koppintva adhatsz meg pozíciót.
 - Az aláíró kulcs (`ci/debug.keystore`) csak saját/csapaton belüli telepítésre való, Play Áruházba nem.
+
+## Forgalom a közelben (10 / 20 / 30 km)
+Az alsó **Forgalom** gombbal a pozíciód (vagy Teszt módban a kijelölt pont) körüli járművek jelennek meg élőben,
+szaggatott körrel jelölt 10 / 20 / 30 km-es sugárban. Koppints egy járműre a részletekért
+(távolság, sebesség, irány, repülőnél magasság), vagy az alsó számlálóra a távolság szerinti listáért.
+
+| Típus | Forrás | Kulcs |
+|---|---|---|
+| Repülő | ADS-B: adsb.lol → airplanes.live → OpenSky | nem kell |
+| Vonat, Volán busz | MÁV-csoport EMMA élő járműpozíciók | nem kell |
+| Budapesti busz, troli, villamos, metró, HÉV, hajó | BKK FUTÁR | ingyenes, opendata.bkk.hu |
+| Hajó (Duna, Balaton) | AIS – aisstream.io | ingyenes, aisstream.io |
+
+A kulcsokat a Menü → „Forgalom a közelben” részben lehet megadni; ott látszik az egyes források állapota is.
+A lekérések az app natív HTTP-jén mennek (`CapacitorHttp`), így a böngészős CORS-korlát nem akadályozza őket.
